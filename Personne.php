@@ -72,9 +72,11 @@ class Personne {
         return $this;
     }
 
-
-    // ------------------------FONCTIONS---------------------------
-     
+    //* on créé les fonctions
+    //* pour affichier l'objet avec les attributs précisés(prénom, nom etc.)
+    public function __toString(){
+        return $this->prenom." ".$this->nom;
+    } 
 
 }
 

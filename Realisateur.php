@@ -7,7 +7,7 @@ class Realisateur extends Personne{
     protected array $filmsRealisateur;
 
 //*on créé le constructeur pour la liste des films d'un réalisateur
-    public function __construct($prenom, $nom, $sexe, $dateNaissance) {
+    public function __construct(string $prenom, $nom, $sexe, $dateNaissance) {
         parent::__construct($prenom, $nom, $sexe, $dateNaissance);
         $this->filmsRealisateur = [];
     }
@@ -26,13 +26,6 @@ class Realisateur extends Personne{
         return $this;
     }
 
-    //* On créé les fonctions:
-//* pour affichier l'objet avec les attributs précisés(prénom, nom etc.)
-    public function __toString(){
-        return $this->prenom." ".$this->nom;
-    }
-
-
 //* pour ajouter un film dans la liste des films d'un réalisateur 
 
     public function ajouterFilmRealisateur(Film $film) {
@@ -42,7 +35,7 @@ class Realisateur extends Personne{
 //* afficher la liste des films d'un réalisateur
 
     public function afficherFilmographieRealisateur(){
-        $result =  "<h1>Films de $this</h1>";
+        $result =  "<h1>Films de réalisateur $this</h1>";
         foreach ($this->filmsRealisateur as $film) {
             $result .= $film."<br>";
         }
