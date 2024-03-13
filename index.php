@@ -25,10 +25,6 @@ $casting12= new Casting($hautecouture, $kwinslet, $tdunnage);
 $casting21 = new Casting($titanic, $ldicaprio, $jdawson);
 
 
-
-//*echo $casting11->afficherCastings();
-//*echo $casting12->afficherCastings();
-
 echo $drame->afficherFilmographieGenre();
 // echo $scienceFiction->afficherFilmographieGenre();
 // echo $thriller->afficherFilmographieGenre();
@@ -42,7 +38,7 @@ echo $JamesCameron->afficherFilmographieRealisateur();
 echo $ldicaprio->afficherFilmographieActeur();
 // echo "<br> <br>";
 
-// echo $titanic->afficherInfoFilm();
+echo $titanic->afficherInfoFilm();
 // echo "<br> <br>";
 // echo $avatar->afficherInfoFilm();
 // echo "<br> <br>";
